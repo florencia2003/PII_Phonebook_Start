@@ -31,5 +31,11 @@ namespace Library
 
             return result;
         }
+
+        public void Send(IMessageChannel messageChannel, Message message)
+        {
+
+        }
+
     }
 }
