@@ -31,12 +31,20 @@ namespace Library
 
             return result;
         }
-        public void addContact(Contact contact){
+        public void addContact(Contact contact)
+        {
             persons.Add(contact);
         }
         
-        public void removeContact(Contact contact){
+        public void removeContact(Contact contact)
+        {
             persons.Remove(contact);
         }
-}
+
+        public void Send(IMessageChannel messageChannel, Message message)
+        {
+
+        }
+
     }
+}
