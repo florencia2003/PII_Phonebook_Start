@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 namespace Library
 {
     //Sebatian Martinez
-    public class Messagetwitter : IMessageChannel
+    public class Messagetwitter : Message
     {
 
-       public void Send(Message message)
-       {
-            
-       }
+        public override Message(string from, string to)
+        {
+            this.From = from;
+            this.To = to;
+        }
 
 
     }
