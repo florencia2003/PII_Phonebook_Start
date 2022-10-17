@@ -9,10 +9,11 @@ namespace Library
     public class Messagetwitter : Message
     {
 
-        public override Message(string from, string to)
+        public override Message(string from, string to, string text)
         {
             this.From = from;
             this.To = to;
+            this.Text = text;
         }
 
 
